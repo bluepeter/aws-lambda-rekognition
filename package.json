@@ -16,6 +16,6 @@
     "webpack-cli": "^3.1.0"
   },
   "scripts": {
-    "deploy": "webpack --display-error-details --config webpack.config.babel.js -bail && touch -t203701010000 functions/rekognize/built/index.js && zip -Xryv9 functions/rekognize/built/prospective.zip functions/rekognize/built/index.js && aws lambda update-function-code --publish --function-name rekognize --zip-file fileb://functions/rekognize/built/prospective.zip"
+    "deploy": "webpack --display-error-details --config webpack.config.babel.js -bail && cd functions/rekognize/built/ && touch -t203701010000 index.js && zip -Xryv9 prospective.zip index.js && aws lambda update-function-code --publish --function-name rekognize --zip-file fileb://prospective.zip"
   }
 }
