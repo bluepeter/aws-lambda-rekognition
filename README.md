@@ -1,6 +1,9 @@
-# aws-lambda-rekognition
+# AWS Lambda + Rekognition
 
-Lambda invocation of AWS Rekognition for facial recognition
+This project will setup an S3 trigger whenever an image is added to the S3
+bucket. The trigger will invoke a Lambda function. In turn, this Lambda
+function will call AWS Rekognition, and output the results in the same S3
+bucket as a JSON file.
 
 ## How to use
 
