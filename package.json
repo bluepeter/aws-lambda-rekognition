@@ -1,0 +1,21 @@
+{
+  "name": "aws-lambda-rekognition",
+  "version": "0.1.0",
+  "private": false,
+  "homepage": "https://github.com/bluepeter/aws-lambda-rekognition",
+  "dependencies": {
+    "aws-sdk": "^2.311.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "dotenv-webpack": "^1.5.7",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "scripts": {
+    "deploy": "webpack --display-error-details --config webpack.config.babel.js -bail"
+  }
+}
