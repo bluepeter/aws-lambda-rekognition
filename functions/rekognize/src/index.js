@@ -14,6 +14,7 @@ export const handler = async (event, context, lambdaCallback) => {
       ContentType: "application/json",
       Body: JSON.stringify(
         await R.detectFaces({
+          Attributes: ["ALL"],
           Image: {
             S3Object: {
               Bucket: s3Bucket,
