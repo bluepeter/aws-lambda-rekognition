@@ -5,6 +5,12 @@ an S3 bucket. The trigger will invoke a Lambda function. This Lambda function
 will call AWS Rekognition, and output the results in the same S3 bucket as a
 JSON file.
 
+## Screenshots
+
+![Screenshot](https://user-images.githubusercontent.com/2158187/45521780-63028900-b774-11e8-891b-6d6f2a6a1c01.png)
+![Screenshot](https://user-images.githubusercontent.com/2158187/45521781-63028900-b774-11e8-80c1-6f9fdf1a9df4.png)
+![Screenshot](https://user-images.githubusercontent.com/2158187/45521779-63028900-b774-11e8-8075-993191ce9074.png)
+
 ## How to use
 
 1. Clone this repo!
